@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Daily Business News in 1 Min</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />   
+    <link rel="stylesheet" href="css/tooplate-simply-amazed.css" type="text/css" />
+<!--
+
+
+
+-->
+</head>
+
+<body>
+    <div id="outer">
+        <header class="header order-last" id="tm-header">
+            <nav class="navbar">
+                <div class="collapse navbar-collapse single-page-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-1"><span class="icn"><i class="fas fa-2x fa-air-freshener"></i></span>     Introduction</a>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/tarunpreet"><span class="icn"><i class="far fa-2x fa-images"></i></span> About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/@DailyBusinessNewsin1Min/shorts"><span class="icn"><i class="far fa-2x fa-images"></i></span> Shorts Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-4"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+        
+        <main id="content-box" class="order-first">
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1">
+                <div class="container">
+                    <div class="item">
+                        <div class="bg-blue-transparent logo-fa"><span><i class="fas fa-2x fa-atom"></i></span> Daily Business News</div>
+                        <div class="bg-blue-transparent simple"><p>For Corporate Professionals Wanting <b> <u>Latest Business News Daily in 1 Minute. </u></b>
+</p></div>
+                    </div>
+                </div>
+            </div>
+        
+
+           
+
+            <section class="contact-section section" id="section-4">
+                <div class="container">
+                    <div class="title">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 mb-4 contact-form">
+                            <div class="form tm-contact-item-inner">
+                                <form action="#" method="POST">
+                                    <div class="form-group">
+                                        <input name="name" type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="email" type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" class="textarea form-control" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group text-left">
+                                        <input type="submit" class="btn btn-primary" value="Send it">
+                                    </div>
+                                </form>
+
+  <script>
+        function submitToGitHub() {
+            const username = document.getElementById('username').value;
+            const repository = document.getElementById('repository').value;
+            const data = document.getElementById('data').value;
+
+            const accessToken = 'YOUR_GITHUB_ACCESS_TOKEN'; // Replace with your actual GitHub access token
+
+            const apiUrl = `https://api.github.com/repos/${username}/${repository}/issues`;
+
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${accessToken}`
+                },
+                body: JSON.stringify({
+                    title: 'New Data Submission',
+                    body: data
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`GitHub API Error: ${response.status} ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Data submitted to GitHub:', data);
+                alert('Data submitted to GitHub!');
+            })
+            .catch(error => {
+                console.error('Error submitting data to GitHub:', error);
+                alert('Error submitting data to GitHub. Check the console for details.');
+            });
+        }
+    </script>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 contact-details">
+                            <div class="tm-contact-item-inner-2">
+                                <p>Professional having a more than a decade of experience in the fields of Finance and Risk Management and holding industry-recognised certifications such as CFA and FRM.</p>
+                                <ul class="font-weight-light">
+                                    <li>
+                                        <span class="icn"><i class="fas fa-mobile-alt"></i></span>
+                                        <span class="lbl">Tel:</span> <a href="#">+91 9999 218 518</a>
+                                    </li>
+                                    <li>
+                                        <span class="icn"><i class="fas fa-at"></i></span>
+                                        <span class="lbl">Email:</span> <a href="#">tarunpreet.ytube@gmail.com</a>
+                                    </li>
+                            
+                                </ul>
+                            </div>                        
+                        </div>
+                        <div class="col-lg-3 col-md-12 map">
+                            <!-- Map -->
+                            <div class="map-outer tm-mb-40">
+                                <div class="gmap-canvas">
+                                    <iframe width="100%" height="400" id="gmap-canvas"
+                                        src="img/tarun2000.jpg"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <footer class="footer container container-2">
+                    <div class="row"> 
+                        <p class="col-sm-7">Copyright 2023 Daily Business News </p>
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
